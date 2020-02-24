@@ -19,6 +19,9 @@ function displayBanner(n) {
   }
 
   console.log(poundSymbols + ' Challenge ' + n + ' ' + poundSymbols);
+  
+  // Or, with interpolation:
+  // console.log(`${poundSymbols} Challenge ${n} ${poundSymbols}`);
 }
 
 
@@ -87,7 +90,9 @@ for (let i = 0; i < symmetricalCapitals.length; i++) {
 // Using array methods, add a value (your choice!) to the start of the following array and two values (of your choice) to the end, and then console.log out each value individually.
 displayBanner(5);
 const fibonacciNumbers = [1, 1, 2, 3, 5, 8, 13];
+fibonacciNumbers.unshift('the fibonacci numbers are:');
 fibonacciNumbers.push(21);
+fibonacciNumbers.push(34);
 
 for (let i = 0; i < fibonacciNumbers.length; i++) {
   console.log(fibonacciNumbers[i]);
